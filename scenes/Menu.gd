@@ -18,8 +18,6 @@ export var move_time: float = 1.0
 # Целевое/текущее положение кнопок.
 export var buttons_position: Array = [1, 3, 2, 0]
 var is_buttons_move: bool = false
-
-
 var buttons_move_vector: PoolVector2Array = [
 	Vector2.ZERO,
 	Vector2.ZERO,
@@ -91,7 +89,7 @@ func shuffle_buttons():
 		is_buttons_move = false
 
 
-func exit_programm():
+func show_exit_dialog():
 	$YesNoPopup.popup_centered_ratio(0.3)
 
 

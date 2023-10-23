@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/Campfire.glb-c7286bbcff715317fd9191ee2592ab49.scn"
+path="res://.import/Campfire.glb-85debe8623aa3dfe20de32fad5dd35f5.scn"
 
 [deps]
 
-source_file="res://scenes/Campfire.glb"
-dest_files=[ "res://.import/Campfire.glb-c7286bbcff715317fd9191ee2592ab49.scn" ]
+source_file="res://resources/other/Campfire.glb"
+dest_files=[ "res://.import/Campfire.glb-85debe8623aa3dfe20de32fad5dd35f5.scn" ]
 
 [params]
 

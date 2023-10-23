@@ -9,6 +9,7 @@ export var buttons_list: Array
 func _ready():
 	window_title = title
 	$RichTextLabel.set_text(text)
+	$ButtonsContainer.add_constant_override("separation", 10)
 	for button in buttons_list:
 		var button_instance = Button.new()
 		button_instance.text = button
