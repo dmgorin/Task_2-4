@@ -9,4 +9,4 @@ It is a project with simple user interface. It has 4 buttons with different func
 - "Кнопка 3" shuffle buttons;
 - "Кнопка 4" exit programm.
 
-I have developed 2 different window dialog for it: "YesNo" dialog and more flexible custom dialog with list with buttons list setup.
+I have developed 2 different window dialog for it: "YesNo" dialog and more flexible custom dialog with buttons list setup.
