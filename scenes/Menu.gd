@@ -41,11 +41,11 @@ func _process(delta):
 		i += 1
 
 
-func show_change_scene_dialog():
+func show_change_scene_dialog() -> void:
 	$CustomWindowDialog.popup_centered_ratio(0.5)
 
 
-func process_dialog_output(value):
+func process_dialog_output(value: int) -> void:
 	match value:
 		0:
 			change_scene()
@@ -53,15 +53,15 @@ func process_dialog_output(value):
 			pass
 
 
-func change_scene():
+func change_scene() -> void:
 	get_tree().change_scene("res://scenes/CampfireScene.tscn")
 
 
-func do_some_effect():
+func do_some_effect() -> void:
 	$AnimationPlayer.play("thanos_things")
 
 
-func shuffle_buttons():
+func shuffle_buttons() -> void:
 	if not is_buttons_move:
 		is_buttons_move = true
 		# Исключение повторений
@@ -89,9 +89,26 @@ func shuffle_buttons():
 		is_buttons_move = false
 
 
-func show_exit_dialog():
+func shuffle_button_text() -> void:
+	$Buttons/Button1.text = shuffle_string($Buttons/Button1.text)
+	$Buttons/Button3.text = shuffle_string($Buttons/Button3.text)
+	$Buttons/Button4.text = shuffle_string($Buttons/Button4.text)
+
+
+func shuffle_string(string: String) -> String:
+	var new_string: Array
+	for single_char in string:
+		new_string.append(single_char)
+	new_string.shuffle()
+	string = ""
+	for single_char in new_string:
+		string += single_char
+	return string
+
+
+func show_exit_dialog() -> void:
 	$YesNoPopup.popup_centered_ratio(0.3)
 
 
-func exit():
+func exit() -> void:
 	get_tree().quit()

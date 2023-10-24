@@ -11,5 +11,5 @@ func _process(delta):
 	$Path/PathFollow.unit_offset += sphere_speed * delta
 
 
-func return_to_menu():
+func return_to_menu() -> void:
 	get_tree().change_scene("res://scenes/Menu.tscn")
